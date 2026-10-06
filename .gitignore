@@ -1,0 +1,20 @@
+# Dependencies
+/node_modules/
+
+# Stored client uploads (keep directory & .htaccess, ignore uploaded files)
+/backend/uploads/*
+!/backend/uploads/.htaccess
+!/backend/uploads/.gitkeep
+
+# System logs
+*.log
+/backend/logs/*
+!/backend/logs/.gitkeep
+
+# Temporary & non-project files
+/GIFTNew folder/
+*.accdb
+
+Thumbs.db
+.vscode/
+.idea/

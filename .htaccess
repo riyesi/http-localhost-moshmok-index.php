@@ -1,0 +1,87 @@
+# ============================================================
+# moshmok — Root .htaccess
+# Production security, HTTPS, headers, path protection
+# ============================================================
+
+# ── Charset & MIME defaults ─────────────────────────────────
+AddDefaultCharset UTF-8
+
+# ── Directory listing ────────────────────────────────────────
+Options -Indexes -MultiViews
+
+# ── HTTPS redirect (enable once SSL cert is provisioned) ────
+# Remove the # from each line below when SSL is confirmed live.
+#<IfModule mod_rewrite.c>
+#  RewriteEngine On
+#  RewriteCond %{HTTPS} off
+#  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#</IfModule>
+
+# ── Block direct HTTP access to sensitive backend paths ───────
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^backend/config(/|$)       - [F,L]
+  RewriteRule ^backend/includes(/|$)     - [F,L]
+  RewriteRule ^backend/logs(/|$)         - [F,L]
+  RewriteRule ^backend/cron(/|$)         - [F,L]
+  RewriteRule ^database(/|$)             - [F,L]
+  RewriteRule ^node_modules(/|$)         - [F,L]
+  RewriteRule ^AGENTS\.md$              - [F,L]
+  RewriteRule \.env$                     - [F,L]
+</IfModule>
+
+# ── Block dev/config artefacts ───────────────────────────────
+<FilesMatch "(^\.git|^\.env|\.log$|\.sql$|\.sh$|package\.json$|package-lock\.json$|tailwind\.config\.js$|AGENTS\.md$)">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order Deny,Allow
+    Deny from all
+  </IfModule>
+</FilesMatch>
+
+# ── Security headers ─────────────────────────────────────────
+<IfModule mod_headers.c>
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-XSS-Protection "1; mode=block"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always unset X-Powered-By
+  Header always unset Server
+</IfModule>
+
+# ── PHP: errors logged, never displayed ──────────────────────
+<IfModule mod_php.c>
+  php_flag display_errors Off
+  php_flag log_errors On
+</IfModule>
+
+# ── Compression ──────────────────────────────────────────────
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript application/javascript application/json
+</IfModule>
+
+# ── Browser caching for static assets ───────────────────────
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css               "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/jpeg             "access plus 1 year"
+  ExpiresByType image/png              "access plus 1 year"
+  ExpiresByType image/webp             "access plus 1 year"
+  ExpiresByType font/woff2             "access plus 1 year"
+  ExpiresByType font/woff              "access plus 1 year"
+  ExpiresByType text/html              "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|woff2?|ttf|svg|jpg|jpeg|png|webp|gif|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.php$">
+    Header set Cache-Control "no-store, no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>
