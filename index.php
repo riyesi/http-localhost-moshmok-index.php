@@ -1,3 +1,11 @@
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +14,8 @@
   <title>Professional Financial &amp; Training Solutions — Home</title>
   <meta name="description" content="Your trusted partner for accounting, tax audit, financial advisory and accredited training in South Africa.">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
   <script src="assets/js/main.js" defer></script>
   <style>
     .top-accent { border-top: 2px solid #95f6c6; }
@@ -116,6 +126,67 @@
           <span class="material-symbols-outlined" aria-hidden="true" style="font-variation-settings: 'FILL' 1;">verified_user</span>
           <span>100% Black-Owned</span>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Members Section (Dynamic Grid) -->
+  <?php include __DIR__ . '/members-loader.php'; ?>
+
+  <!-- Become a Member Form Section -->
+  <section id="become-member" class="membership-form-section" aria-labelledby="membership-form-heading">
+    <div class="members-container">
+      <div class="membership-card">
+        <div class="members-header text-center">
+          <span class="members-subtitle">Join Our Network</span>
+          <h2 id="membership-form-heading" class="members-title">Become a Member</h2>
+          <p class="members-desc">Connect with accredited financial practitioners, tax professionals, and enterprise leaders. Register your interest below.</p>
+        </div>
+
+        <form id="member-signup-form" class="membership-form" action="member-signup.php" method="POST" novalidate>
+          <!-- CSRF Token -->
+          <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($_SESSION['csrf_token'] ?? '', ENT_QUOTES, 'UTF-8') ?>">
+
+          <!-- Honeypot spam protection (hidden from users, bot trap) -->
+          <div class="form-hp" style="display:none !important;" aria-hidden="true">
+            <label for="member_website">Leave this field blank</label>
+            <input type="text" id="member_website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <!-- Timestamp field for spam protection (> 2 seconds check) -->
+          <input type="hidden" name="form_timestamp" value="<?= time() ?>">
+
+          <div class="form-row">
+            <!-- Full Name (required) -->
+            <div class="form-field">
+              <label for="member-name" class="field-label">Full Name <span class="required-star" aria-hidden="true">*</span></label>
+              <input type="text" id="member-name" name="name" class="field-input" placeholder="e.g. Sipho Ndlovu" required aria-required="true">
+              <span class="field-error" id="error-name" aria-live="polite"></span>
+            </div>
+
+            <!-- Email Address (required) -->
+            <div class="form-field">
+              <label for="member-email" class="field-label">Email Address <span class="required-star" aria-hidden="true">*</span></label>
+              <input type="email" id="member-email" name="email" class="field-input" placeholder="sipho@example.co.za" required aria-required="true">
+              <span class="field-error" id="error-email" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <!-- Organization (optional) -->
+          <div class="form-field">
+            <label for="member-org" class="field-label">Organization / Practice <span class="optional-tag">(Optional)</span></label>
+            <input type="text" id="member-org" name="organization" class="field-input" placeholder="e.g. Ndlovu Advisory Services">
+          </div>
+
+          <!-- Live feedback alert container -->
+          <div id="member-form-feedback" class="form-feedback" aria-live="polite" role="status"></div>
+
+          <div class="form-submit-wrapper">
+            <button type="submit" id="member-submit-btn" class="member-btn-primary">
+              <span class="btn-text">Become a Member</span>
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </section>
