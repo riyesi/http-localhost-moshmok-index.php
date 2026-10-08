@@ -106,6 +106,21 @@ CREATE TABLE IF NOT EXISTS `contact_messages` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- ------------------------------------------------------------
+-- Member network registrations
+-- ------------------------------------------------------------
+CREATE TABLE IF NOT EXISTS `member_signups` (
+  `id`            INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  `name`          VARCHAR(150)  NOT NULL,
+  `email`         VARCHAR(255)  NOT NULL,
+  `organization`  VARCHAR(255)  NOT NULL DEFAULT '',
+  `status`        ENUM('pending','approved','rejected') NOT NULL DEFAULT 'pending',
+  `created_at`    TIMESTAMP     NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  INDEX `idx_email`    (`email`),
+  INDEX `idx_created`  (`created_at`),
+  INDEX `idx_status`   (`status`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- ------------------------------------------------------------
 -- Admin users (portal authentication)
 -- ------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS `admin_users` (
