@@ -141,7 +141,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000000; /* neutral fallback behind SAIT dark badge */
+  background-color: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 1.5rem;
   padding: 0;               /* Removed — image fills the box edge-to-edge */

@@ -14,8 +14,8 @@ if (empty($_SESSION['csrf_token'])) {
   <title>Professional Financial &amp; Training Solutions — Home</title>
   <meta name="description" content="Your trusted partner for accounting, tax audit, financial advisory and accredited training in South Africa.">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
+  <link rel="stylesheet" href="css/style.css?v=<?= file_exists(__DIR__ . '/css/style.css') ? filemtime(__DIR__ . '/css/style.css') : time() ?>">
+  <script src="js/main.js?v=<?= file_exists(__DIR__ . '/js/main.js') ? filemtime(__DIR__ . '/js/main.js') : time() ?>" defer></script>
   <script src="assets/js/main.js" defer></script>
   <style>
     .top-accent { border-top: 2px solid #95f6c6; }
