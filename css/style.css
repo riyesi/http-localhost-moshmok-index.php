@@ -61,27 +61,27 @@
 
 /* ==========================================================================
    CENTERED ACCREDITATION BOXES (GRID)
-   400px x 400px Image Box, Centered Layout, Name Below
+   Reduced clean proportion: 260px x 260px Image Box, Centered Layout
    ========================================================================== */
 .members-grid {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  gap: 3.5rem;
-  max-width: 1080px;
+  gap: 2.5rem;
+  max-width: 860px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
 
 /* Individual Tile / Card */
 .member-tile {
-  flex: 0 1 480px;
-  width: 480px;
+  flex: 0 1 380px;
+  width: 380px;
   max-width: 100%;
   background: #ffffff;
   border: 1px solid #e2e8f0;
-  border-radius: 2rem;
-  padding: 2.5rem 2rem;
+  border-radius: 1.5rem;
+  padding: 2rem 1.75rem;
   box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.06), 0 8px 10px -6px rgba(15, 23, 42, 0.03);
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
   box-sizing: border-box;
@@ -99,14 +99,14 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 5px;
+  height: 4px;
   background: transparent;
   transition: background 0.3s ease;
 }
 
 .member-tile:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 25px 40px -5px rgba(15, 23, 42, 0.12), 0 12px 20px -6px rgba(15, 23, 42, 0.06);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px -5px rgba(15, 23, 42, 0.1), 0 10px 15px -5px rgba(15, 23, 42, 0.04);
   border-color: #86efac;
 }
 
@@ -124,7 +124,7 @@
   height: 100%;
   text-decoration: none;
   color: inherit;
-  border-radius: 1.25rem;
+  border-radius: 1rem;
 }
 
 .member-link:focus-visible {
@@ -132,10 +132,10 @@
   outline-offset: 6px;
 }
 
-/* 400px x 400px Image Box — no padding, image fills the frame */
+/* 260px x 260px Image Box — balanced, image fills the frame */
 .member-logo-wrap {
-  width: 400px;
-  height: 400px;
+  width: 260px;
+  height: 260px;
   max-width: 100%;
   aspect-ratio: 1 / 1;
   display: flex;
@@ -143,10 +143,10 @@
   justify-content: center;
   background-color: #ffffff;
   border: 1px solid #e2e8f0;
-  border-radius: 1.5rem;
-  padding: 0;               /* Removed — image fills the box edge-to-edge */
+  border-radius: 1.25rem;
+  padding: 0;
   box-sizing: border-box;
-  margin: 0 auto 1.5rem auto;
+  margin: 0 auto 1.25rem auto;
   overflow: hidden;          /* Clips to rounded corners */
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -156,30 +156,30 @@
   box-shadow: 0 0 0 3px rgba(134, 239, 172, 0.35);
 }
 
-/* Image fills the full 400×400 box — no empty margins */
+/* Image fills the 260×260 box */
 .member-logo {
   width: 100%;
   height: 100%;
-  object-fit: cover;  /* Scales up to fill the box completely */
+  object-fit: cover;
   object-position: center center;
   display: block;
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .member-tile:hover .member-logo {
-  transform: scale(1.06);
+  transform: scale(1.05);
 }
 
 /* Member Name Label (Directly Under the Image) */
 .member-name-label {
   font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: #0f172a;
   text-align: center;
   line-height: 1.4;
   margin: 0 0 1.25rem 0;
-  padding: 0 0.5rem;
+  padding: 0 0.25rem;
   flex-grow: 1;
 }
 
@@ -367,11 +367,11 @@
   }
   .member-tile {
     width: 100%;
-    max-width: 480px;
+    max-width: 380px;
   }
   .member-logo-wrap {
-    width: 380px;
-    height: 380px;
+    width: 240px;
+    height: 240px;
   }
 }
 
@@ -385,17 +385,15 @@
   }
   .member-tile {
     padding: 1.75rem 1.25rem;
-    border-radius: 1.5rem;
-  }
-  .member-logo-wrap {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    padding: 1rem;
     border-radius: 1.25rem;
   }
+  .member-logo-wrap {
+    width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+  }
   .member-name-label {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
   .membership-card {
     padding: 2rem 1.25rem;
