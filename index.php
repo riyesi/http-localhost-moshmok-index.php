@@ -48,6 +48,9 @@ if (empty($_SESSION['csrf_token'])) {
     <div class="flex items-center gap-unit hidden md:flex">
       <a href="document-upload.php" class="font-label-md text-label-md text-on-surface-variant border border-on-surface-variant rounded px-gutter py-unit hover:bg-surface-container-low transition-all">Upload Docs</a>
       <a href="contact.php" class="font-label-md text-label-md bg-tertiary-fixed text-on-tertiary-fixed rounded px-gutter py-unit hover:opacity-90 transition-all font-bold">Get a Quote</a>
+      <a href="backend/admin/login.php" class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 border border-outline-variant rounded px-3 py-unit hover:bg-surface-container-low" title="Staff / Admin Portal Login">
+        <span class="material-symbols-outlined text-[18px]" aria-hidden="true">lock</span> Login
+      </a>
     </div>
     <button class="mobile-nav-btn md:hidden text-primary p-2" aria-expanded="false" aria-label="Toggle navigation">
       <span class="material-symbols-outlined icon-menu">menu</span>
@@ -70,6 +73,9 @@ if (empty($_SESSION['csrf_token'])) {
   </nav>
   <div class="mt-8 flex flex-col gap-3">
     <a href="contact.php" class="bg-tertiary-fixed text-on-tertiary-fixed text-center py-3 rounded font-label-md text-label-md font-bold">Get a Quote</a>
+    <a href="backend/admin/login.php" class="border border-outline-variant text-on-surface-variant hover:text-primary text-center py-2.5 rounded font-label-md text-label-md flex items-center justify-center gap-1.5 font-medium">
+      <span class="material-symbols-outlined text-[18px]" aria-hidden="true">lock</span> Staff / Admin Login
+    </a>
   </div>
 </div>
 
@@ -320,6 +326,7 @@ if (empty($_SESSION['csrf_token'])) {
       <a href="booking.php" class="font-label-md text-label-md text-on-primary-container hover:text-on-primary hover:underline transition-all">Book Consultation</a>
       <a href="document-upload.php" class="font-label-md text-label-md text-on-primary-container hover:text-on-primary hover:underline transition-all">Upload Documents</a>
       <a href="contact.php" class="font-label-md text-label-md text-on-primary-container hover:text-on-primary hover:underline transition-all">Contact</a>
+      <a href="backend/admin/login.php" class="font-label-md text-label-md text-on-primary-container hover:text-on-primary hover:underline transition-all flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">lock</span> Staff Login</a>
     </div>
     <div class="col-span-1 flex flex-col gap-2">
       <span class="font-label-md text-label-md text-tertiary-fixed font-bold mb-2">Contact</span>
