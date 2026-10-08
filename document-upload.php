@@ -10,6 +10,7 @@ $csrfToken = getCsrfToken();
   <title>Secure Document Upload — Financial Precision</title>
   <meta name="description" content="Securely upload your financial documents to Professional Financial & Training Solutions. 256-bit encryption.">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="css/style.css?v=<?= file_exists(__DIR__ . '/css/style.css') ? filemtime(__DIR__ . '/css/style.css') : time() ?>">
   <script src="assets/js/main.js" defer></script>
   <style>
     #mobile-nav { transform: translateX(100%); transition: transform 0.3s ease; display: flex; }

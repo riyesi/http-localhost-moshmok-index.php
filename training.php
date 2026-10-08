@@ -10,6 +10,7 @@ $csrfToken = getCsrfToken();
   <title>Training &amp; Courses — Financial Precision</title>
   <meta name="description" content="Accredited financial training courses for accounting, tax, and audit professionals. ATO & TTP certified programmes with CPE credits.">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="css/style.css?v=<?= file_exists(__DIR__ . '/css/style.css') ? filemtime(__DIR__ . '/css/style.css') : time() ?>">
   <script src="assets/js/main.js" defer></script>
   <style>
     .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }

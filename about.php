@@ -6,6 +6,7 @@
   <title>About Us — Financial Precision</title>
   <meta name="description" content="Learn about Professional Financial & Training Solutions — our story, values, and the expertise behind our South African practice.">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="css/style.css?v=<?= file_exists(__DIR__ . '/css/style.css') ? filemtime(__DIR__ . '/css/style.css') : time() ?>">
   <script src="assets/js/main.js" defer></script>
   <style>
     .top-accent { border-top: 2px solid #95f6c6; }
