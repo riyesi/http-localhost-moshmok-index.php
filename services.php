@@ -93,12 +93,12 @@
   </section>
 
     <!-- Statutory Returns & Compliance Services Section -->
-  <section class="pt-16 pb-16 md:pt-24 md:pb-20 bg-surface-container-lowest border-b border-outline-variant" aria-labelledby="statutory-compliance-heading">
+  <section class="bg-surface-container-lowest border-b border-outline-variant" style="padding-top: 5.5rem; padding-bottom: 4.5rem;" aria-labelledby="statutory-compliance-heading">
     <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
       
       <!-- Section Header -->
       <div class="max-w-3xl mx-auto flex flex-col items-center justify-center text-center mb-12 md:mb-16">
-        <div class="inline-flex items-center justify-center gap-2 px-4 py-1.5 rounded-full bg-tertiary-fixed/30 border border-tertiary-fixed-dim text-on-tertiary-fixed text-xs font-bold uppercase tracking-wider mb-4 shadow-sm mx-auto">
+        <div class="inline-flex items-center justify-center gap-2 px-4 py-1.5 rounded-full bg-tertiary-fixed/30 border border-tertiary-fixed-dim text-on-tertiary-fixed text-xs font-bold uppercase tracking-wider mb-5 shadow-sm mx-auto">
           <span class="material-symbols-outlined text-sm" aria-hidden="true">verified_user</span>
           <span>Our Compliance Services: Statutory Returns</span>
         </div>
