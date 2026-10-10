@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services — Financial Precision</title>
+  <title>Services � Financial Precision</title>
   <meta name="description" content="Comprehensive accounting, tax audit, financial advisory and accredited training services in South Africa.">
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="css/style.css?v=<?= file_exists(__DIR__ . '/css/style.css') ? filemtime(__DIR__ . '/css/style.css') : time() ?>">
@@ -93,19 +93,19 @@
   </section>
 
     <!-- Statutory Returns & Compliance Services Section -->
-  <section class="py-12 md:py-16 bg-surface-container-lowest border-b border-outline-variant" aria-labelledby="statutory-compliance-heading">
+  <section class="pt-16 pb-16 md:pt-24 md:pb-20 bg-surface-container-lowest border-b border-outline-variant" aria-labelledby="statutory-compliance-heading">
     <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
       
       <!-- Section Header -->
-      <div class="max-w-3xl mb-10 md:mb-12">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-tertiary-fixed/30 border border-tertiary-fixed-dim text-on-tertiary-fixed text-xs font-bold uppercase tracking-wider mb-3">
+      <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-tertiary-fixed/30 border border-tertiary-fixed-dim text-on-tertiary-fixed text-xs font-bold uppercase tracking-wider mb-4 shadow-sm">
           <span class="material-symbols-outlined text-sm" aria-hidden="true">verified_user</span>
           <span>Our Compliance Services: Statutory Returns</span>
         </div>
-        <h2 id="statutory-compliance-heading" class="font-headline-lg text-headline-lg md:text-[36px] md:leading-tight text-primary font-bold mb-3 text-balance">
+        <h2 id="statutory-compliance-heading" class="font-headline-lg text-headline-lg md:text-[38px] md:leading-tight text-primary font-bold mb-4 text-balance">
           Stay Compliant. Avoid Penalties. We've Got You Covered.
         </h2>
-        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
           Don't let admin headaches derail your business. We handle your South African statutory returns so you can focus on what you do best—growing your company.
         </p>
       </div>
@@ -128,8 +128,8 @@
             </p>
           </div>
           <div class="pt-4 border-t border-outline-variant/60 mt-auto">
-            <a href="https://www.sars.gov.za/contact-us/online-query-system/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#166534] hover:text-[#14532d] hover:underline" title="Guide to the SARS Online Query System (SOQS) | South African Revenue Service">
-              <span>Guide to the SARS Online Query System (SOQS) | South African Revenue Service</span>
+            <a href="https://www.sars.gov.za/contact-us/online-query-system/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#166534] hover:text-[#14532d] hover:underline" title="Guide to the SARS Online Query System (SOQS) on official SARS website">
+              <span>Guide to the SARS Online Query System (SOQS)</span>
               <span class="material-symbols-outlined text-[14px]" aria-hidden="true">open_in_new</span>
             </a>
           </div>
@@ -513,7 +513,7 @@
     </div>
   </div>
   <div class="px-margin-mobile md:px-margin-desktop py-4 bg-[#0A1324] text-center border-t border-on-primary-fixed-variant">
-    <p class="font-body-md text-body-md text-on-primary-container text-xs">&copy; 2025 Professional Financial &amp; Training Solutions. All rights reserved.</p>
+    <p class="font-body-md text-body-md text-on-primary-container text-xs">&copy; 2024 Professional Financial &amp; Training Solutions. All rights reserved.</p>
   </div>
 </footer>
 
