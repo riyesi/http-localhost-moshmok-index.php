@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services � Financial Precision</title>
+  <title>Services — Financial Precision</title>
   <meta name="description" content="Comprehensive accounting, tax audit, financial advisory and accredited training services in South Africa.">
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="css/style.css?v=<?= file_exists(__DIR__ . '/css/style.css') ? filemtime(__DIR__ . '/css/style.css') : time() ?>">
@@ -92,7 +92,120 @@
     </div>
   </section>
 
-  <!-- Services Grid -->
+    <!-- Statutory Returns & Compliance Services Section -->
+  <section class="py-12 md:py-16 bg-surface-container-lowest border-b border-outline-variant" aria-labelledby="statutory-compliance-heading">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+      
+      <!-- Section Header -->
+      <div class="max-w-3xl mb-10 md:mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-tertiary-fixed/30 border border-tertiary-fixed-dim text-on-tertiary-fixed text-xs font-bold uppercase tracking-wider mb-3">
+          <span class="material-symbols-outlined text-sm" aria-hidden="true">verified_user</span>
+          <span>Our Compliance Services: Statutory Returns</span>
+        </div>
+        <h2 id="statutory-compliance-heading" class="font-headline-lg text-headline-lg md:text-[36px] md:leading-tight text-primary font-bold mb-3 text-balance">
+          Stay Compliant. Avoid Penalties. We've Got You Covered.
+        </h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+          Don't let admin headaches derail your business. We handle your South African statutory returns so you can focus on what you do best—growing your company.
+        </p>
+      </div>
+
+      <!-- 3-Column Compliance Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        
+        <!-- Card 1: SARS Tax Returns -->
+        <div class="bg-surface border border-outline-variant rounded-xl p-6 md:p-8 flex flex-col justify-between hover-lift relative group transition-all duration-300 hover:border-[#166534] shadow-sm">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-[#166534] rounded-t-xl opacity-80 group-hover:opacity-100 transition-opacity"></div>
+          <div>
+            <div class="w-12 h-12 rounded-lg bg-[#dcfce7] text-[#166534] flex items-center justify-center mb-5 text-2xl" aria-hidden="true">
+              📊
+            </div>
+            <h3 class="font-headline-md text-headline-md text-primary font-bold mb-3">
+              <span><strong>SARS</strong> Tax Returns</span>
+            </h3>
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-5">
+              From VAT and PAYE to Provisional Income Tax, we ensure your submissions to the <strong>South African Revenue Service (SARS)</strong> are accurate and on time. Keep SARS off your back.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-outline-variant/60 mt-auto">
+            <a href="https://www.sars.gov.za/contact-us/online-query-system/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#166534] hover:text-[#14532d] hover:underline" title="Guide to the SARS Online Query System (SOQS) | South African Revenue Service">
+              <span>Guide to the SARS Online Query System (SOQS) | South African Revenue Service</span>
+              <span class="material-symbols-outlined text-[14px]" aria-hidden="true">open_in_new</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: CIPC Annual Returns -->
+        <div class="bg-surface border border-outline-variant rounded-xl p-6 md:p-8 flex flex-col justify-between hover-lift relative group transition-all duration-300 hover:border-[#166534] shadow-sm">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-[#166534] rounded-t-xl opacity-80 group-hover:opacity-100 transition-opacity"></div>
+          <div>
+            <div class="w-12 h-12 rounded-lg bg-[#dcfce7] text-[#166534] flex items-center justify-center mb-5 text-2xl" aria-hidden="true">
+              🏢
+            </div>
+            <h3 class="font-headline-md text-headline-md text-primary font-bold mb-3">
+              <span><strong>CIPC</strong> Annual Returns</span>
+            </h3>
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-5">
+              Keep your company or close corporation legally active. We handle your yearly <strong>CIPC</strong> updates quickly, so you never risk business deregistration or statutory lockouts.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-outline-variant/60 mt-auto">
+            <span class="inline-flex items-center gap-1.5 text-xs font-medium text-on-surface-variant">
+              <span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim" aria-hidden="true">check_circle</span>
+              Guaranteed CIPC Compliance &amp; Active Status
+            </span>
+          </div>
+        </div>
+
+        <!-- Card 3: Employer Declarations -->
+        <div class="bg-surface border border-outline-variant rounded-xl p-6 md:p-8 flex flex-col justify-between hover-lift relative group transition-all duration-300 hover:border-[#166534] shadow-sm">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-[#166534] rounded-t-xl opacity-80 group-hover:opacity-100 transition-opacity"></div>
+          <div>
+            <div class="w-12 h-12 rounded-lg bg-[#dcfce7] text-[#166534] flex items-center justify-center mb-5 text-2xl" aria-hidden="true">
+              👥
+            </div>
+            <h3 class="font-headline-md text-headline-md text-primary font-bold mb-3">
+              <span>Employer Declarations</span>
+            </h3>
+            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-5">
+              Seamless monthly and bi-annual filing for the <strong>Unemployment Insurance Fund (UIF)</strong> and <strong>Skills Development Levy (SDL)</strong>. Keep your workforce compliant without the paperwork.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-outline-variant/60 mt-auto">
+            <span class="inline-flex items-center gap-1.5 text-xs font-medium text-on-surface-variant">
+              <span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim" aria-hidden="true">check_circle</span>
+              Full UIF &amp; SDL Payroll Alignment
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Why It Matters & Call to Action Banner -->
+      <div class="bg-gradient-to-r from-primary to-[#0f172a] text-on-primary rounded-2xl p-6 md:p-10 border border-outline-variant/40 shadow-lg flex flex-col lg:flex-row items-center justify-between gap-6">
+        <div class="flex items-start gap-4 max-w-2xl">
+          <div class="w-12 h-12 rounded-xl bg-tertiary-fixed/20 border border-tertiary-fixed/40 flex items-center justify-center shrink-0 text-tertiary-fixed mt-1">
+            <span class="material-symbols-outlined text-2xl" aria-hidden="true">shield</span>
+          </div>
+          <div>
+            <span class="font-label-md text-xs uppercase tracking-widest text-tertiary-fixed font-bold block mb-1">Why It Matters</span>
+            <p class="font-body-lg text-base md:text-lg text-slate-100 leading-relaxed">
+              Missing a deadline means heavy fines and legal trouble. We keep your business <strong class="text-tertiary-fixed font-semibold">100% compliant</strong> so you can operate with total peace of mind.
+            </p>
+          </div>
+        </div>
+        <div class="shrink-0 w-full lg:w-auto">
+          <a href="contact.php?service=tax_audit" class="inline-flex items-center justify-center gap-2 w-full lg:w-auto px-8 py-4 bg-[#00cc00] hover:bg-[#00e600] active:scale-95 text-[#002200] font-bold font-label-md text-base rounded-xl transition-all shadow-[0_4px_20px_rgba(0,204,0,0.35)] hover:shadow-[0_6px_25px_rgba(0,204,0,0.5)]">
+            <span>Get a Free Compliance Quote</span>
+            <span class="material-symbols-outlined text-xl" aria-hidden="true">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!-- Services Grid -->
   <section class="py-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg">
       <!-- Service 1: Accounting -->
@@ -400,7 +513,7 @@
     </div>
   </div>
   <div class="px-margin-mobile md:px-margin-desktop py-4 bg-[#0A1324] text-center border-t border-on-primary-fixed-variant">
-    <p class="font-body-md text-body-md text-on-primary-container text-xs">&copy; 2024 Professional Financial &amp; Training Solutions. All rights reserved.</p>
+    <p class="font-body-md text-body-md text-on-primary-container text-xs">&copy; 2025 Professional Financial &amp; Training Solutions. All rights reserved.</p>
   </div>
 </footer>
 

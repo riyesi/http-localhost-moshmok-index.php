@@ -480,7 +480,7 @@ $csrfToken = getCsrfToken();
       </div>
     </div>
     <div class="border-t border-outline-variant pt-6 text-center">
-      <p class="font-body-sm text-body-sm text-on-surface-variant text-xs">&copy; 2024 Professional Financial &amp; Training Solutions. All rights reserved.</p>
+      <p class="font-body-sm text-body-sm text-on-surface-variant text-xs">&copy; 2025 Professional Financial &amp; Training Solutions. All rights reserved.</p>
     </div>
   </div>
 </footer>

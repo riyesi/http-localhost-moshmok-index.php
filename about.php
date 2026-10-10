@@ -320,7 +320,7 @@
     </div>
   </div>
   <div class="px-margin-mobile md:px-margin-desktop py-4 bg-[#0A1324] text-center border-t border-on-primary-fixed-variant">
-    <p class="font-body-md text-body-md text-on-primary-container text-xs">&copy; 2024 Professional Financial &amp; Training Solutions. All rights reserved.</p>
+    <p class="font-body-md text-body-md text-on-primary-container text-xs">&copy; 2025 Professional Financial &amp; Training Solutions. All rights reserved.</p>
   </div>
 </footer>
 
