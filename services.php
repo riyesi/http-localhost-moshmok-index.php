@@ -97,15 +97,15 @@
     <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
       
       <!-- Section Header -->
-      <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16">
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-tertiary-fixed/30 border border-tertiary-fixed-dim text-on-tertiary-fixed text-xs font-bold uppercase tracking-wider mb-4 shadow-sm">
+      <div class="max-w-3xl mx-auto flex flex-col items-center justify-center text-center mb-12 md:mb-16">
+        <div class="inline-flex items-center justify-center gap-2 px-4 py-1.5 rounded-full bg-tertiary-fixed/30 border border-tertiary-fixed-dim text-on-tertiary-fixed text-xs font-bold uppercase tracking-wider mb-4 shadow-sm mx-auto">
           <span class="material-symbols-outlined text-sm" aria-hidden="true">verified_user</span>
           <span>Our Compliance Services: Statutory Returns</span>
         </div>
-        <h2 id="statutory-compliance-heading" class="font-headline-lg text-headline-lg md:text-[38px] md:leading-tight text-primary font-bold mb-4 text-balance">
+        <h2 id="statutory-compliance-heading" class="font-headline-lg text-headline-lg md:text-[38px] md:leading-tight text-primary font-bold mb-4 text-center mx-auto">
           Stay Compliant. Avoid Penalties. We've Got You Covered.
         </h2>
-        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto text-center leading-relaxed">
           Don't let admin headaches derail your business. We handle your South African statutory returns so you can focus on what you do best—growing your company.
         </p>
       </div>
