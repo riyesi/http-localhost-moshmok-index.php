@@ -93,12 +93,12 @@
   </section>
 
     <!-- Statutory Returns & Compliance Services Section -->
-  <section class="bg-surface-container-lowest border-b border-outline-variant" style="padding-top: 5.5rem; padding-bottom: 4.5rem;" aria-labelledby="statutory-compliance-heading">
+  <section class="border-b border-outline-variant" style="background-color: #f8fafc; padding-top: 5.5rem; padding-bottom: 4.5rem;" aria-labelledby="statutory-compliance-heading">
     <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
       
       <!-- Section Header -->
       <div class="max-w-3xl mx-auto flex flex-col items-center justify-center text-center mb-12 md:mb-16">
-        <div class="inline-flex items-center justify-center gap-2 px-4 py-1.5 rounded-full bg-tertiary-fixed/30 border border-tertiary-fixed-dim text-on-tertiary-fixed text-xs font-bold uppercase tracking-wider mb-5 shadow-sm mx-auto">
+        <div class="inline-flex items-center justify-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-5 shadow-sm mx-auto" style="background-color: #dcfce7; border: 1px solid #86efac; color: #166534;">
           <span class="material-symbols-outlined text-sm" aria-hidden="true">verified_user</span>
           <span>Our Compliance Services: Statutory Returns</span>
         </div>
@@ -190,7 +190,7 @@
           <div>
             <span class="font-label-md text-xs uppercase tracking-widest text-tertiary-fixed font-bold block mb-1">Why It Matters</span>
             <p class="font-body-lg text-base md:text-lg text-slate-100 leading-relaxed">
-              Missing a deadline means heavy fines and legal trouble. We keep your business <strong class="text-tertiary-fixed font-semibold">100% compliant</strong> so you can operate with total peace of mind.
+              Missing a deadline means heavy fines and legal trouble. We keep your business <strong style="color: #00ff66; font-weight: 800; text-shadow: 0 0 10px rgba(0,255,102,0.3);">💯 100% compliant</strong> so you can operate with total peace of mind.
             </p>
           </div>
         </div>
@@ -379,13 +379,13 @@
           <h3 class="font-headline-md text-headline-md text-on-primary mb-2 mt-2">Comprehensive Advisory</h3>
           <div class="flex items-baseline mb-6">
             <span class="font-stat-lg text-stat-lg text-on-primary">From R24,000</span>
-            <span class="font-body-md text-body-md text-on-primary-container ml-2">/mo</span>
+            <span class="font-body-md text-body-md ml-2" style="color: #86efac;">/mo</span>
           </div>
-          <p class="font-body-md text-body-md text-on-primary-container text-sm mb-8 pb-6 border-b border-on-primary-fixed-variant">Integrated accounting and strategic advisory for growing entities.</p>
+          <p class="font-body-md text-body-md text-sm mb-8 pb-6 border-b border-white/20" style="color: #cbd5e1;">Integrated accounting and strategic advisory for growing entities.</p>
           <ul class="space-y-4 mb-8 flex-grow">
             <li class="flex items-start">
               <span class="material-symbols-outlined text-tertiary-fixed-dim mr-3 text-sm mt-1" aria-hidden="true">check</span>
-              <span class="font-body-md text-body-md text-on-primary-container text-sm">Everything in Essential</span>
+              <span class="font-body-md text-body-md text-sm font-medium" style="color: #ffffff;">Everything in Essential</span>
             </li>
             <li class="flex items-start">
               <span class="material-symbols-outlined text-tertiary-fixed-dim mr-3 text-sm mt-1" aria-hidden="true">check</span>
