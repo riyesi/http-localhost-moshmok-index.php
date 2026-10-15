@@ -331,6 +331,7 @@ if (empty($_SESSION['csrf_token'])) {
     <div class="col-span-1 flex flex-col gap-2">
       <span class="font-label-md text-label-md text-tertiary-fixed font-bold mb-2">Contact</span>
       <p class="font-label-md text-label-md text-on-primary-container"><a href="tel:+27825406032" class="hover:text-on-primary hover:underline transition-all">+27 82 540 6032</a></p>
+      <p class="font-label-md text-label-md text-on-primary-container flex items-center gap-1"><span style="font-size:11px;font-weight:700;color:#00cc00;text-transform:uppercase;letter-spacing:0.05em;">Office</span><a href="tel:0815102206" class="hover:text-on-primary hover:underline transition-all">081 510 2206</a></p>
       <p class="font-label-md text-label-md text-on-primary-container"><a href="mailto:info@moshmokbusinessenter-prise.me" class="hover:text-on-primary hover:underline transition-all break-all">info@moshmokbusinessenter-prise.me</a></p>
       <p class="font-body-md text-body-md text-on-primary-container text-sm mt-4">CBAP SA | ATO SA | TTP SA</p>
     </div>

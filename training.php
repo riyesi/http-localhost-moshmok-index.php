@@ -409,7 +409,7 @@ $csrfToken = getCsrfToken();
           <div class="space-y-3 font-body-md text-body-md text-on-surface-variant">
             <div class="flex items-center gap-3">
               <span class="material-symbols-outlined text-primary" aria-hidden="true">call</span>
-              <a href="tel:+27825406032" class="hover:text-primary transition-colors">+27 82 540 6032</a>
+              <a href="tel:+27825406032" class="hover:text-primary transition-colors">+27 82 540 6032</a> &nbsp;<span style="font-size:11px;font-weight:700;color:#00cc00;text-transform:uppercase;letter-spacing:0.05em;">Office:</span> <a href="tel:0815102206" class="hover:text-primary transition-colors">081 510 2206</a>
             </div>
             <div class="flex items-center gap-3">
               <span class="material-symbols-outlined text-primary" aria-hidden="true">mail</span>
@@ -469,7 +469,7 @@ $csrfToken = getCsrfToken();
         <div class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
           <p class="flex items-start gap-2">
             <span class="material-symbols-outlined text-primary text-sm mt-0.5" aria-hidden="true">call</span>
-            <a href="tel:+27825406032" class="hover:text-primary transition-colors">+27 82 540 6032</a>
+            <a href="tel:+27825406032" class="hover:text-primary transition-colors">+27 82 540 6032</a> &nbsp;<span style="font-size:11px;font-weight:700;color:#00cc00;text-transform:uppercase;letter-spacing:0.05em;">Office:</span> <a href="tel:0815102206" class="hover:text-primary transition-colors">081 510 2206</a>
           </p>
           <p class="flex items-start gap-2">
             <span class="material-symbols-outlined text-primary text-sm mt-0.5" aria-hidden="true">mail</span>
